@@ -1,0 +1,4 @@
+string intput =
+ Console.ReadLine();
+int output = Convert.ToInt32(intput, 2);
+Console.WriteLine(output);
