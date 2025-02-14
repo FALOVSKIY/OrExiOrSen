@@ -1,0 +1,17 @@
+ namespace ConsoleApp4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int N = int.Parse(Console.ReadLine());
+            int M = int.Parse(Console.ReadLine());
+            int T = int.Parse(Console.ReadLine());
+
+            int Nnew = (N * 60 + M + T) / 60 % 24;
+            int Mnew = (N * 60 + M + T) % 60;
+
+            Console.WriteLine(Nnew/10 +""+ Nnew%10 + ":"+Mnew/10+""+Mnew%10);
+        }
+    }
+}
